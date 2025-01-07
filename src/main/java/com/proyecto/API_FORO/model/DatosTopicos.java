@@ -3,13 +3,11 @@ package com.proyecto.API_FORO.model;
 import com.proyecto.API_FORO.DTOs.Categoria;
 import com.proyecto.API_FORO.DTOs.DatosRegistroTopicos;
 import jakarta.persistence.*;
-import lombok.AllArgsConstructor;
-import lombok.EqualsAndHashCode;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
+import lombok.*;
 import org.antlr.v4.runtime.misc.NotNull;
 
 import java.time.LocalDateTime;
+import java.util.List;
 
 @Table(name = "topics")
 @Entity(name = "DatosTopicos")
@@ -25,7 +23,7 @@ public class DatosTopicos {
     private String content;
     @Enumerated(EnumType.STRING)
     private Categoria category;
-    private String[] tags;
+    private List<String> tags;
     @Embedded
     private DatosUsuario autor;
     private LocalDateTime createdAt;
