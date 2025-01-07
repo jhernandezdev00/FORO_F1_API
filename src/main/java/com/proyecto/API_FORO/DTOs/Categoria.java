@@ -1,0 +1,15 @@
+package com.proyecto.API_FORO.DTOs;
+
+public enum Categoria {
+    GRAN_PREMIO,
+    EQUIPOS,
+    PILOTOS,
+    HISTORIA,
+    TECNOLOGIA,
+    RUMORES_NOTICIAS,
+    REGLAS_REGULACIONES,
+    PRUEBAS_ENTRENAMIENTOS,
+    ESPORTS_F1VIRTUAL,
+    FANZONE,
+    FUERA_DE_PISTA
+}
